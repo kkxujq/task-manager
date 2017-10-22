@@ -1,11 +1,23 @@
 import { NgModule, SkipSelf, Optional } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from './header/header.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: []
+  declarations: [
+    HeaderComponent, 
+    SidebarComponent,
+    FooterComponent
+  ],
+  exports: [
+     HeaderComponent,
+     SidebarComponent,
+     FooterComponent
+  ]
 })
 export class CoreModule {  
   constructor(@Optional() @SkipSelf() parent: CoreModule) {
