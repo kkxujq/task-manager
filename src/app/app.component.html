@@ -1,13 +1,12 @@
 <mat-sidenav-container>
-  <mat-sidenav #sidenav mod="over" mode="side">
+  <mat-sidenav #sidenav mode="over" position="start">
     <app-sidebar></app-sidebar>
   </mat-sidenav>
   <div class="site">
-    <header>
-      <app-header></app-header>
+    <header color="#FFF176">
+      <app-header (toggle)="sidenav.toggle()"></app-header>
     </header>
     <main>
-      <button type="button" mat-button (click)="sidenav.toggle ()">打开侧边栏 </button>
     </main>
     <footer>
       <app-footer></app-footer>
