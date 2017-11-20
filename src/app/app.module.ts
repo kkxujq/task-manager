@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { MatSidenavModule } from '@angular/material';
 
 import { AppRoutingModule } from './app-routing.module'; 
+import { LoginModule} from './login/login.module';
 
 import { AppComponent } from './app.component';
 
@@ -17,7 +18,8 @@ import { CoreModule } from './core/core.module';
     BrowserModule,
     CoreModule,
     MatSidenavModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LoginModule
   ],
   providers: [],
   bootstrap: [AppComponent]
