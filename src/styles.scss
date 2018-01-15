@@ -7,16 +7,25 @@ html, body, app-root, mat-sidenav-container, .site {
     margin: 0;
     padding: 0;
 }
- 
+
 html, body, main, app-root, .site {
     box-sizing: border-box;
 }
 
 .site {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 main {
     flex: 1;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.text-right {
+  padding: .4em;
+  text-align: right;
 }

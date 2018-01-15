@@ -1,18 +1,34 @@
-<mat-card>
-  <mat-card-header>
-    <mat-card-title>登录：</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-      <mat-input-container color="accent">
+<form>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>登录：</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-input-container color="accent" class="full-width">
         <input matInput type="text" placeholder="您的email">
       </mat-input-container>
-      <mat-input-container color="accent">
+      <mat-input-container color="accent" class="full-width">
         <input matInput type="password" placeholder="密码">
       </mat-input-container>
-      <button mat-button type="button">登录</button>
-  </mat-card-content> 
-  <mat-card-actions>
-    <p>还没有账户？<a href="">注册</a></p>
-    <p>忘记密码？<a href="">找回</a></p>
-  </mat-card-actions>
-</mat-card>
+      <button mat-raised-button type="button">登录</button>
+    </mat-card-content>
+    <mat-card-actions class="text-right">
+      <p>还没有账户？<a href="">注册</a></p>
+      <p>忘记密码？<a href="">找回</a></p>
+    </mat-card-actions>
+  </mat-card>
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        每日佳句
+      </mat-card-title>
+      <mat-card-subtitle>
+        这里应该是名人名句，但是我不知道说些啥！😳
+      </mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="http://dwz.cn/7cbmrS" alt="">
+    <mat-card-content>
+      这里应该是名人名句，但是我不知道说些啥！😳这里应该是名人名句，但是我不知道说些啥！😳
+    </mat-card-content>
+  </mat-card>
+</form>
