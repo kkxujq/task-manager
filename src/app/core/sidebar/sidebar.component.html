@@ -1,10 +1,24 @@
-<mat-list>
-  <h3>项目</h3>
+<mat-nav-list>
+  <h3 mat-subheader>项目</h3>
   <mat-list-item>
-    <span>项目首页</span>
+    <mat-icon mat-list-icon svgIcon="projects"></mat-icon>
+    <span mat-line>项目首页</span>
+    <span mat-line mat-subheader>查看您的所有项目</span>
   </mat-list-item>
-  <h3>日历</h3>
+  <h3 mat-subheader>日历</h3>
   <mat-list-item>
-    <span>日历首页</span>
+    <mat-icon mat-list-icon svgIcon="month"></mat-icon>
+    <span mat-line>月视图</span>
+    <span mat-line mat-subheader>按月查看项目</span>
   </mat-list-item>
-</mat-list>
+  <mat-list-item>
+    <mat-icon mat-list-icon svgIcon="week"></mat-icon>
+    <span mat-line>周视图</span>
+    <span mat-line mat-subheader>按周查看项目</span>
+  </mat-list-item>
+  <mat-list-item>
+    <mat-icon mat-list-icon [svgIcon]="today"></mat-icon>
+    <span mat-line>日试图</span>
+    <span mat-line mat-subheader>按日查看项目</span>
+  </mat-list-item>
+</mat-nav-list>
